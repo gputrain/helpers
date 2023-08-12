@@ -3,6 +3,7 @@ Common helper files for reusability across PyTorch, Spark, Sklearn, Pandas, and 
 
 ## Example of downloading a helper file
 
+```
 import requests
 from pathlib import Path 
 
@@ -16,8 +17,11 @@ else:
     request = requests.get(HELPER_PATH)
     with open(HELPER_NAME+'.py', "wb") as f:
         f.write(request.content)
-        
+```
         
 ### Using the import in a function
 
+```
 from plot_decision_boundary import plot_decision_boundary
+
+```
